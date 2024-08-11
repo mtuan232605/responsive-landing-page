@@ -1,0 +1,107 @@
+.custom-select {
+    position: relative;
+}
+
+.custom-select-mobile{
+    border: 1px solid #AFAFAF;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 24px;
+}
+
+.select-trigger {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-trigge-mobile{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-trigger img {
+    width: 24px;
+    height: 24px;
+}
+
+.select-trigger .arrow {
+    margin-left: 8px;
+    color: #fff;
+}
+.select-trigger .arrow-mobile {
+    color: #000;
+}
+
+.select-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+    width: max-content;
+    margin-top: 12px;
+}
+
+.select-options-mobile {
+    left: 0;
+    border: 1px solid #AFAFAF;
+}
+
+.select-option {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 17.5px;
+    text-align: left;
+    color: #000;
+}
+
+.select-option img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    margin-left: calc(24px + 12px);
+}
+
+.select-option .tick {
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 12px;
+}
+
+.select-option img:not(.active).tick {
+    margin-left: calc(24px + 12px);
+}
+
+.select-option:hover {
+    background-color: #f0f0f0;
+}
+
+.select-option.active .tick {
+    visibility: visible;
+}
+
+.select-option:not(.active) .tick {
+    visibility: hidden;
+}
+
+.select-option:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+    width: 90%;
+}
